@@ -50,7 +50,8 @@ class _ChatScreenState extends State<ChatScreen> {
     final String message = messageInputController.text.trim();
     // print(message.isNotEmpty);
     if (message.isNotEmpty) {
-      socket.emit('chat_message', {'message': message});
+      socket.emit(
+          'chat_message', {'message': message, 'username': 'flutterDevice'});
       messageInputController.clear();
       setState(() {
         messages.add(Message(message: message, username: 'flutterDevice'));
