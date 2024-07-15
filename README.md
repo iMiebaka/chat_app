@@ -8,4 +8,5 @@
 </p>
 
 ## About
-This is based on the HTTP socket protocol for flutter with node backend support
+This is based on the HTTP socket protocol for flutter with socketIO 
+
